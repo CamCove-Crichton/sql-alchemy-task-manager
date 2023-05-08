@@ -53,12 +53,12 @@
         <div class="row">
             <div class="input-field col s12">
                 <i class="fas fa-folder-open prefix light-blue-text text-darken-4"></i>
-               <select name="category_id" id="category_id" class="validate" required>
-                <option value="" disabled selected>Choose Category</option>
-                {% for category in categories %}
+                <select id="category_id" name="category_id" class="validate" required>
+                    <option value="" disabled selected>Choose Category</option>
+                    {% for category in categories %}
                     <option value="{{ category.id }}">{{ category.category_name }}</option>
-                {% endfor %}
-               </select>
+                    {% endfor %}
+                </select>
                 <label for="category_id">Category</label>
             </div>
         </div>
